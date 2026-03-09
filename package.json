@@ -1,0 +1,19 @@
+{
+  "name": "cat-clicker-game",
+  "version": "1.0.0",
+  "description": "🐱 Cat Clicker - Тыкала с падающими эмоджи кота для зумеров",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["game", "clicker", "cat", "emoji", "web-game", "zoomers"],
+  "author": "OpenClaw Agent",
+  "license": "MIT"
+}

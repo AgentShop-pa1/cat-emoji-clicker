@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐱 Cat Clicker - Тыкала Котов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Звёздный фон -->
+        <div class="stars"></div>
+        
+        <!-- Игровая область -->
+        <div class="game-zone" id="gameZone">
+            <!-- Сюда будут падать коты -->
+        </div>
+        
+        <!-- UI элементы -->
+        <div class="ui-container">
+            <div class="score-display">
+                <div class="score-label">SCORE</div>
+                <div class="score-value" id="scoreValue">0</div>
+            </div>
+            
+            <div class="combo-display" id="comboDisplay">
+                <div class="combo-text">COMBO x<span id="comboValue">1</span></div>
+            </div>
+            
+            <div class="level-display">
+                <div class="level-label">LEVEL</div>
+                <div class="level-value" id="levelValue">1</div>
+            </div>
+        </div>
+        
+        <!-- Стартовый экран -->
+        <div class="start-screen" id="startScreen">
+            <div class="logo">
+                <div class="logo-emoji">🐱</div>
+                <h1>CAT CLICKER</h1>
+                <p>Лови падающих котиков!</p>
+            </div>
+            <button class="start-btn" id="startBtn">
+                <span>НАЧАТЬ ИГРУ</span>
+                <div class="btn-glow"></div>
+            </button>
+        </div>
+        
+        <!-- Экран окончания игры -->
+        <div class="game-over-screen" id="gameOverScreen">
+            <div class="game-over-content">
+                <h2>GAME OVER</h2>
+                <div class="final-score">
+                    <span>Финальный счёт:</span>
+                    <div id="finalScore">0</div>
+                </div>
+                <button class="restart-btn" id="restartBtn">
+                    <span>ИГРАТЬ СНОВА</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Партиклы для эффектов -->
+        <div class="particles" id="particles"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
